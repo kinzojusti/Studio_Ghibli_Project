@@ -1,20 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Our titl</title>
+<title>Ghibli Movie Marathon</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="index.css">
 <style>
 </style>
+<script src="index.js"></script>
 <body>
+<header>
+    <h2>Ghibli Movie Marathon</h2>
+</header>
 
-<img src="img_la.jpg" alt="LA" style="width:100%">
-
-<div class="">
- <h1>This is a Heading</h1>
- <p></p>
- <p>This is another paragraph.</p>
+<!--Run Time-->
+<div id="run-time">
+    <h2 id="timetext">Run Time:</h2>
 </div>
-<script src="src/index.js"></script>
+
+<!--Movie Posters-->
+<div id="poster-display">
+    <img class="poster-image" src=" " alt="insert name here"/>
+</div>
+
+
+<!--Movie Details-->
+<div id="move-details">
+    <h2 class="eng-name">Insert English Name Here</h2>
+    <h2 class="jp-name">Insert Japanese Name Here</h2>
+    <h3 class="director">Insert Director Name Here</h3>
+    <p class="synopsis">Insert Movie Synopsis Here</p>
+</div>
+
+<!--New Comment Form-->
+<form id="new-comment">
+    <h4>Add New Comment</h4>
+    <label for="new-comment">Comment: </label>
+    <textarea name="new-comment" id="new-comment"></textarea>
+    <input type="submit" value="Generate" id="generate" />
+
+</form>
+  <script>
+    function submitForm () {
+      let form = document.getElementById("new-comment");
+      form.submit();
+    }
+  </script>
+
+<!--Drop Down Scroll-->
+<label for="select-director">Filter By Director:</label>
+    <select id="director-dropdown" name="select-director">
+      <option value="a">a</option>
+      <option value="b">b</option>
+      <option value="c">c</option>
+      <option value="d">d</option>
+    </select>
+
+<!--Generate Button?-->
+
+<!--Email Form-->
+<form id="email">
+    <h4>Invite Your Friends</h4>
+    <label for="email">Email Address </label>
+    <textarea name="email" id="email"></textarea>
+    <label for="message">Message </label>
+    <textarea name="message" id="message"></textarea>
+    <input type="submit" value="Send" id="send" />
+
+</form>
+  <script>
+    function sendEmail () {
+      let email = document.getElementById("email");
+      email.submit();
+    }
+  </script>
+
+
 </body>
 </html>
