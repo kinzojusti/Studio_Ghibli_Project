@@ -14,27 +14,26 @@
         function fetchMovies(){
             fetch(getUrl)
             .then(response => response.json())
-            .then(console.log)
+            .then(moviesObj => renderMovies(moviesObj))
         }
 
+            //rendering function:
+        function renderMovies(moviesObj){
+            // console.log(moviesArray)
+            // const movieList = document.getElementById('-list')
+            moviesObj.forEach(movie => renderOneMovie(movie))} 
 
-        function renderMovies(moviesArray){
-            console.log(moviesArray)
-            const heroList = document.getElementById('hero-list')
-            moviesArray.forEach(movie => {
-            
-                const movieLi = document.createElement('li')
+            function renderOneMovie(){
+                const movieLi = document.createElement('#poster-display')
                 movieLi.textContent = movie.name
                 const movieImg = document.createElement('img')
                 movieImg.src = movie.image
                 const movieTitle = document.createElement('p')
                 movieTitle.textContent = movie.title
-    
                 movieLi.append()
                 movieImg.append()
                 movieTitle.append()
                 
-            })
-        }
-        renderMovies()
-})
+            }
+        })
+        fetchMovies();
