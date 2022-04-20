@@ -24,12 +24,18 @@
 
             function render1stMovie(movie){
                 console.log(movie)
+                const movieRunTime = document.querySelector('#timetext')
+                movieRunTime.textContent = movie.running_time
                 const movieImgTag = document.querySelector('.poster-image')
                 movieImgTag.src = movie.image 
-                const englishTitle = document.querySelector('.engName')
-                englishTitle.textContent = movie.title
-                console.log(englishTitle, "someword")
-                
+                const movieEngName = document.querySelector('eng-name')
+                movieEngName.textContent =movie.title
+                const movieJapName = document.querySelectorr('jp-name')
+                movieJapName.textContent = movie.orginal_title 
+                const movieDirName = document.querySelector('director')
+                movieDirName.textContent = movie.director
+                const movieSynopsis = document.querySelector('synopsis')
+                movieSynopsis.textContent = movie.description
                 
             }
         fetchMovies()
