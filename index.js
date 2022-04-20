@@ -26,9 +26,9 @@
                 console.log(movie)
                 const movieImgTag = document.querySelector('.poster-image')
                 movieImgTag.src = movie.image 
-                const englishTitle = document.querySelector('.engName')
-                englishTitle.textContent = movie.title
-                console.log(englishTitle, "someword")
+                // const englishTitle = document.querySelector('.engName')
+                // englishTitle.src = movie.title
+                // console.log(movieTitle)
                 // const movieLi = document.createElement('#poster-display')
                 // movieLi.textContent = movie.name
                 // const movieImg = document.createElement('img')
