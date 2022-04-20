@@ -12,4 +12,95 @@
   /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
-  } 
+
+    /*added from other branch:*/
+
+    body {
+        margin: 10px;
+        height: 100vh;
+        font-weight: 100;
+        font-family: "Bangers", cursive;
+        color: peachpuff;
+        background: radial-gradient(#a23982, #1f1013);
+      }
+    
+    h1 {
+        font-size: 60px;
+        text-shadow: 4px 4px maroon;
+    }
+    #timetext {
+    
+    }
+    
+    .poster-image {
+        border: 4px solid peachpuff;
+        box-shadow: #1f1013;
+        border-radius: 25px ;
+        
+    }
+    
+    #move-details {
+        border: 4px solid peachpuff;
+        box-shadow: #1f1013;
+        border-radius: 25px;
+        line-height: -1;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h3#eng-name {
+        font-size: 30px;
+        text-shadow: green;
+    }
+    h4 {
+        font-size: 25px;
+        text-shadow: green;
+        margin: 10px;
+    }
+    h5#director {
+        text-shadow: 2px 2px maroon;
+    }
+    p{
+    
+    }
+    
+    
+    #jp-name {
+    
+    }
+    
+    #director {
+    
+    }
+    
+    #synopis{
+    
+    }
+    #new-comment.submit1 {
+        
+    }
+    input#submit {
+        border-radius: 25px;
+        padding: 10px;
+        font-family: "bangers", cursive;
+    }
+    input#generate {
+        border-radius: 25px;
+        padding: 10px;
+        font-family: "bangers", cursive;
+    }
+    textarea#new-comment {
+        width: 600px;
+        height: 120px;
+        border: 3px solid #cccccc;
+        border-radius: 20px;
+        padding: 5px;
+        margin:  10px;
+        font-family: Tahoma, sans-serif;
+        background-image: url(bg.gif);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+    
