@@ -29,49 +29,7 @@
                 const englishTitle = document.querySelector('.engName')
                 englishTitle.textContent = movie.title
                 console.log(englishTitle, "someword")
-                // const movieLi = document.createElement('#poster-display')
-                // movieLi.textContent = movie.name
-                // const movieImg = document.createElement('img')
-                // movieImg.src = movie.image
-                // const movieTitle = document.createElement('p')
-                // movieTitle.textContent = movie.title
-                // movieLi.append()
-                // movieImg.append()
-                // movieTitle.append()
                 
-            }
-            
-            function render2ndMovie(movie){
-                console.log(movie)
-                const movieImgTag2= document.querySelector('.poster-image2')
-                movieImgTag2.src = movie.image
-                
-                // const movieLi = document.createElement('#poster-display')
-                // movieLi.textContent = movie.name
-                // const movieImg = document.createElement('img')
-                // movieImg.src = movie.image
-                // const movieTitle = document.createElement('p')
-                // movieTitle.textContent = movie.title
-                // movieLi.append()
-                // movieImg.append()
-                // movieTitle.append()
-                
-            }
-            
-            function render3rdMovie(movie){
-                console.log(movie)
-                const movieImgTag3= document.querySelector('.poster-image3')
-                movieImgTag3.src = movie.image
-                
-                // const movieLi = document.createElement('#poster-display')
-                // movieLi.textContent = movie.name
-                // const movieImg = document.createElement('img')
-                // movieImg.src = movie.image
-                // const movieTitle = document.createElement('p')
-                // movieTitle.textContent = movie.title
-                // movieLi.append()
-                // movieImg.append()
-                // movieTitle.append()
                 
             }
         fetchMovies()
