@@ -14,8 +14,8 @@
         //below is the rendering function://
         function renderMovies(moviesObj){
             moviesObj.forEach(movie => render1stMovie(movie))
-            moviesObj.forEach(movie => render2ndMovie(movie))
-            moviesObj.forEach(movie => render3rdMovie(movie))
+            // moviesObj.forEach(movie => render2ndMovie(movie))
+            // moviesObj.forEach(movie => render3rdMovie(movie))
         } 
 
 
@@ -24,54 +24,19 @@
 
             function render1stMovie(movie){
                 console.log(movie)
+                const movieRunTime = document.querySelector('#timetext')
+                movieRunTime.textContent = movie.running_time
                 const movieImgTag = document.querySelector('.poster-image')
                 movieImgTag.src = movie.image 
-                // const englishTitle = document.querySelector('.engName')
-                // englishTitle.src = movie.title
-                // console.log(movieTitle)
-                // const movieLi = document.createElement('#poster-display')
-                // movieLi.textContent = movie.name
-                // const movieImg = document.createElement('img')
-                // movieImg.src = movie.image
-                // const movieTitle = document.createElement('p')
-                // movieTitle.textContent = movie.title
-                // movieLi.append()
-                // movieImg.append()
-                // movieTitle.append()
+                const movieEngName = document.querySelector('eng-name')
+                movieEngName.textContent =movie.title
+                const movieJapName = document.querySelectorr('jp-name')
+                movieJapName.textContent = movie.orginal_title 
+                const movieDirName = document.querySelector('director')
+                movieDirName.textContent = movie.director
+                const movieSynopsis = document.querySelector('synopsis')
+                movieSynopsis.textContent = movie.description
                 
-            }
-            
-            function render2ndMovie(movie){
-                console.log(movie)
-                const movieImgTag2= document.querySelector('.poster-image2')
-                movieImgTag2.src = movie.image
-                
-                // const movieLi = document.createElement('#poster-display')
-                // movieLi.textContent = movie.name
-                // const movieImg = document.createElement('img')
-                // movieImg.src = movie.image
-                // const movieTitle = document.createElement('p')
-                // movieTitle.textContent = movie.title
-                // movieLi.append()
-                // movieImg.append()
-                // movieTitle.append()
-                
-            }
-            
-            function render3rdMovie(movie){
-                console.log(movie)
-                const movieImgTag3= document.querySelector('.poster-image3')
-                movieImgTag3.src = movie.image
-                
-                // const movieLi = document.createElement('#poster-display')
-                // movieLi.textContent = movie.name
-                // const movieImg = document.createElement('img')
-                // movieImg.src = movie.image
-                // const movieTitle = document.createElement('p')
-                // movieTitle.textContent = movie.title
-                // movieLi.append()
-                // movieImg.append()
-                // movieTitle.append()
                 
             }
         fetchMovies()
