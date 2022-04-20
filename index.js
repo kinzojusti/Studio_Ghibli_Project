@@ -1,5 +1,5 @@
     document.addEventListener("DOMContentLoaded", function() {
-
+        
         //below is the Fetch for the data://
         const getUrl = ('https://ghibliapi.herokuapp.com/films');
         
