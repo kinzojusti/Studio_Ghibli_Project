@@ -28,13 +28,13 @@
                 movieRunTime.textContent = movie.running_time
                 const movieImgTag = document.querySelector('.poster-image')
                 movieImgTag.src = movie.image 
-                const movieEngName = document.querySelector('eng-name')
+                const movieEngName = document.querySelector('#eng-name')
                 movieEngName.textContent =movie.title
-                const movieJapName = document.querySelectorr('jp-name')
+                const movieJapName = document.querySelector('#jp-name')
                 movieJapName.textContent = movie.orginal_title 
-                const movieDirName = document.querySelector('director')
+                const movieDirName = document.querySelector('#director')
                 movieDirName.textContent = movie.director
-                const movieSynopsis = document.querySelector('synopsis')
+                const movieSynopsis = document.querySelector('#synopsis')
                 movieSynopsis.textContent = movie.description
                 
             }
