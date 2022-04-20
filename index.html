@@ -18,17 +18,13 @@
 </div>
 
 <!--Movie Posters-->
-<div id="poster-display">
-    <img class="poster-image" src=" " alt="insert name here"/>
+<div id="poster-display" class="card"> 
+    
 </div>
 
 
 <!--Movie Details-->
-<div id="move-details">
-    <h2 class="eng-name">Insert English Name Here</h2>
-    <h2 class="jp-name">Insert Japanese Name Here</h2>
-    <h3 class="director">Insert Director Name Here</h3>
-    <p class="synopsis">Insert Movie Synopsis Here</p>
+<div id="movie-details" class="card">
 </div>
 
 <!--New Comment Form-->
@@ -36,7 +32,7 @@
     <h4>Add New Comment</h4>
     <label for="new-comment">Comment: </label>
     <textarea name="new-comment" id="new-comment"></textarea>
-    <input type="submit" value="Generate" id="generate" />
+    <input type="submit" value="Submit" id="Submit" />
 
 </form>
   <script>
@@ -55,7 +51,13 @@
       <option value="d">d</option>
     </select>
 
+    <ul id="director-names">
+
+    </ul>
 <!--Generate Button?-->
+<form id="button">
+  <input type="submit" value="generate" id="generate" />
+</form>
 
 <!--Email Form-->
 <form id="email">
