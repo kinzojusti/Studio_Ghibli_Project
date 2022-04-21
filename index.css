@@ -1,17 +1,17 @@
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow:  8px 16px rgba(0,0,0,0.2);
-    transition: 1.5s;
+    box-shadow:  8px 16px rgba(57, 57, 57, 0.2);
+    transition: 0.5s;
     flex-shrink: 3;
-    width: 620px;
-    max-height: ;
+    width: 600px;
     margin: 20px;
     border-radius: 20px;
+    
 }
   /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow:  8px 16px rgba(0,0,0,0.2);
-    transition: 1.5;
+    transition: .5s;
 }
   /* Add some padding inside the card container */
 .container {
@@ -53,12 +53,14 @@ h1 {
     text-align: center;
     
 }
-#timetext{
+#timetext{ 
+    
     font-size: 40px;
     text-shadow: 4px 8px #6565c8;
 }
 h2 { 
-    margin: 8px;
+    align-items: flex-end;
+    margin: 30px;
     font-size: 32px;
     text-shadow: 4px 4px #6565c8;
 
@@ -85,15 +87,20 @@ h6 {
 }
 
 p{
-    width: 600px;
+    width: 540px;
+    align-content: center;
     font-size: 22px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-shadow: 2px 2px #6565c8;
-    margin: 10px;
+    margin: 12px;
+    padding: 2px;
 }
 img{ 
+    margin: 5px;
     border-radius: 25px ;
-    
+    width: 600px;
+    height: 900px;
+    resize: both;
 
 }
 
