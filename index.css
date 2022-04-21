@@ -5,7 +5,7 @@
     flex-shrink: 3;
     width: 600px;
     margin: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     
 }
   /* On mouse-over, add a deeper shadow */
@@ -60,7 +60,7 @@ h1 {
 }
 h2 { 
     align-items: flex-end;
-    margin: 30px;
+    margin: 22px;
     font-size: 32px;
     text-shadow: 4px 4px #6565c8;
 
@@ -69,7 +69,7 @@ h5 {
     font-size: 18px;
 }
 h3 {
-    margin: 8px;
+    margin-left: 13px;
     font-size: 26px;
     text-shadow: 4px 4px #6565c8;
 }
