@@ -1,25 +1,39 @@
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    flex-wrap: nowrap;
+    box-shadow:  8px 16px rgba(0,0,0,0.2);
+    transition: 1.5s;
+    flex-shrink: 3;
+    width: 620px;
+    max-height: ;
+    margin: 20px;
+    border-radius: 20px;
 }
   /* On mouse-over, add a deeper shadow */
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow:  8px 16px rgba(0,0,0,0.2);
+    transition: 1.5;
 }
   /* Add some padding inside the card container */
 .container {
     padding: 2px 16px;
+    margin: 10px;
 } 
 
 
 
 
 
+#h2{
+    border: 2px solid peachpuff; 
+}
 
+form#email.h2 {
+    align-items: center;
+
+}
 
 body {
+    border: 10px white;
     margin: 10px;
     height: 100vh;
     font-weight: 100;
@@ -32,53 +46,58 @@ body {
     height: 100%;
     width:100%;
 }
-.background {
-    float: none;
-    opacity: 0;
-}
 h1 {
-    
-    color: yellowgreen;
+    margin: 30px;
     font-size: 60px;
-    text-shadow: 4px 4px maroon;
+    text-shadow: 4px 4px #6565c8;
+    text-align: center;
+    
+}
+#timetext{
+    font-size: 40px;
+    text-shadow: 4px 8px #6565c8;
 }
 h2 { 
-    text-shadow: 4px 4px maroon;
+    margin: 8px;
+    font-size: 32px;
+    text-shadow: 4px 4px #6565c8;
 
 }
 h5 {
     font-size: 18px;
 }
-h3#eng-name {
-    font-size: 30px;
-    text-shadow: green;
+h3 {
+    margin: 8px;
+    font-size: 26px;
+    text-shadow: 4px 4px #6565c8;
 }
 h4 {
     font-size: 25px;
+    text-shadow: 4px 4px #6565c8;
     text-shadow: green;
-    margin: 20px;
+    margin-left: 80px;
 }
-h5#director {
-    text-shadow: 2px 2px maroon;
+
+h6 {
+    font-size: 25px;
+    text-shadow: 4px 4px #6565c8;
+    margin: 1px;
 }
+
 p{
+    width: 600px;
+    font-size: 22px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow: 2px 2px #6565c8;
+    margin: 10px;
+}
+img{ 
+    border-radius: 25px ;
+    
 
 }
 
-
-#jp-name {
-
-}
-
-#director {
-
-}
-
-#synopis{
-
-}
-
-input#submit {
+input#send {
     border-radius: 25px;
     padding: 10px;
     font-family: 'Lobster', cursive;
@@ -89,14 +108,61 @@ input#generate {
     font-family: 'Lobster', cursive;
 }
 textarea#new-comment {
-    width: 600px;
+    width: 400px;
 	height: 120px;
 	border: 3px solid #cccccc;
     border-radius: 20px;
+	padding: 5px;
+    margin:  10px;
+    box-shadow: 6px 4px rgb(201, 164, 164);
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+textarea#email {
+
+    border-radius: 10px;
 	padding: 5px;
     margin:  10px;
 	font-family: Tahoma, sans-serif;
 	background-image: url(bg.gif);
 	background-position: bottom right;
 	background-repeat: no-repeat;
+}
+textarea#message {
+
+    border-radius: 10px;
+	padding: 5px;
+    margin:  10px;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+input#Submit {
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-family: 'Lobster', cursive;
+    display: wrap;
+    align-items: center;
+    justify-content: center;
+}
+form #new-comment {
+    border: 6px white;
+    display: nowrap;
+    align-items: stretch;
+    border: 2px white;
+}
+
+form.button{
+    position: absolute;
+    align-items: center;
+}
+label#new-comment {
+    position:relative; left:85px; bottom:150px;
+    font-size: 18px;
+
 }
