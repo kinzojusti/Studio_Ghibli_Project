@@ -1,12 +1,14 @@
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow:  8px 16px rgba(57, 57, 57, 0.2);
+    /* box-shadow:  8px 16px rgba(57, 57, 57, 0.2);
     transition: 0.5s;
     flex-shrink: 3;
-    width: 600px;
+    width: 1000px; */
     margin: 20px;
     border-radius: 30px;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
   /* On mouse-over, add a deeper shadow */
 .card:hover {
@@ -51,18 +53,25 @@ h1 {
     font-size: 60px;
     text-shadow: 4px 4px #6565c8;
     text-align: center;
-    
+    position: relative;
 }
 #timetext{ 
     
     font-size: 40px;
     text-shadow: 4px 8px #6565c8;
 }
-h2 { 
+div.card.h2{
+    display: flex;
+    color: red;
+    flex-direction: row;
     align-items: flex-end;
+}
+h2#texttime { 
     margin: 22px;
-    font-size: 32px;
+    font-size: 65px;
     text-shadow: 4px 4px #6565c8;
+    top: 400px;
+    text-align: center;
 
 }
 h5 {
@@ -77,9 +86,7 @@ h4 {
     font-size: 25px;
     text-shadow: 4px 4px #6565c8;
     text-shadow: green;
-    margin-left: 80px;
 }
-
 h6 {
     font-size: 25px;
     text-shadow: 4px 4px #6565c8;
@@ -87,8 +94,8 @@ h6 {
 }
 
 p{
-    width: 540px;
-    align-content: center;
+    width: 200px;
+
     font-size: 22px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-shadow: 2px 2px #6565c8;
@@ -109,7 +116,7 @@ input#send {
     padding: 10px;
     font-family: 'Lobster', cursive;
 }
-input#generate {
+input#Generate {
     border-radius: 25px;
     padding: 10px;
     font-family: 'Lobster', cursive;
@@ -128,7 +135,7 @@ textarea#new-comment {
 	background-repeat: no-repeat;
 }
 
-textarea#email {
+textarea#emailaddress {
 
     border-radius: 10px;
 	padding: 5px;
@@ -159,9 +166,11 @@ input#Submit {
 }
 form #new-comment {
     border: 6px white;
-    display: nowrap;
     align-items: stretch;
     border: 2px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 form.button{
