@@ -29,14 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const btn = document.getElementById('button')
         btn.addEventListener('click', renderMovies)
 
-       /* const sepByDiv = document.getElementsByClassName('sepByDiv');
-
-        for(let i=0; i < threeMovies.length; i += 1){
-        let makeDivs = document.createElement('div');
-        makeDivs.innerHTML = threeMovies[i];
-        sepByDiv.appendChild(makeDivs);
-        console.log('hi')
-        } */
 
 
         function renderMovies(moviesObj){
