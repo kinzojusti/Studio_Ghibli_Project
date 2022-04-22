@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let appTitle = document.getElementById('title')
     appTitle.addEventListener("mouseover", function( event ) {
-        event.target.style.color = "purple";
+        event.target.style.color = "SeaGreen";
         setTimeout(function() {
             event.target.style.color = "";
             }, 500);
@@ -29,29 +29,22 @@ document.addEventListener("DOMContentLoaded", function() {
         const btn = document.getElementById('button')
         btn.addEventListener('click', renderMovies)
 
+       /* const sepByDiv = document.getElementsByClassName('sepByDiv');
+
+        for(let i=0; i < threeMovies.length; i += 1){
+        let makeDivs = document.createElement('div');
+        makeDivs.innerHTML = threeMovies[i];
+        sepByDiv.appendChild(makeDivs);
+        console.log('hi')
+        } */
 
 
-    //above is the Fetch:end of fetch//
-    //below is the rendering function://
         function renderMovies(moviesObj){
             const threeMovies = moviesObj.sort(() => Math.random() - 0.5).slice(0, 3)
             threeMovies.forEach(movie => render1stMovie(movie))
-            console.log(threeMovies)
-        
-    } 
-            // const parent = document.getElementById("container");
-
-            // for( { img, h2, h3, p, } of ads) {
-            // const wrapper =  document.createElement("div");
-            // wrapper.className = "container"; // you can add your class for it
-            // const headline = document.createElement("h1");
-            // headline.textContent = title;
-            // const descrip = document.createElement("p");
-            // descrip.textContent = description;    
-            // const dates = document.createElement("sub");
+            }
             
-            
-
+    
     //callbacks below://
         function render1stMovie(movie){
             // render time text seperately & sum function
@@ -74,30 +67,18 @@ document.addEventListener("DOMContentLoaded", function() {
             movieDetailsContainer.append(movieSynopsis) 
         }
 
-        // Render Run Time??
-        function renderRunTime(runtime) {
-            totalRunTime = threeMovies.reduce(function (sum, movieRunTime) {
-            return sum + threeMovies.timetext;
-            }, 0)
-
-            const movieRunTime = document.createElement('h2')
-            movieRunTime.textContent = runtime.timetext
-    
-            const runTimeContainer = document.getElementById('run-time')
-            runTimeContainer.append(movieRunTime)
-        }
-
         function commentForm(e){
             e.preventDefault()
 
             const newComment = {
             comment: e.target['new-comment'].value
             }
-            console.log('comment')
+            document.getElementById('new-comment').reset()
         }
 
         function emailForm(e){
             e.preventDefault()
+<<<<<<< HEAD
 
         const newEmail = {
             emailaddress: e.target.emailaddress.value,
@@ -106,5 +87,12 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('email')
         }
 
+=======
+            alert('Form Submitted!')
+            document.getElementById('email').reset()
+         }
+        
+ 
+>>>>>>> 49550ba65a772012ac96bd587ca9f31ed956eb26
     fetchMovies()
 })
