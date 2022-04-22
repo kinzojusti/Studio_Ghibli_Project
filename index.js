@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         function emailForm(e){
             e.preventDefault()
-<<<<<<< HEAD
 
         const newEmail = {
             emailaddress: e.target.emailaddress.value,
@@ -87,12 +86,5 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log('email')
         }
 
-=======
-            alert('Form Submitted!')
-            document.getElementById('email').reset()
-         }
-        
- 
->>>>>>> 49550ba65a772012ac96bd587ca9f31ed956eb26
     fetchMovies()
 })
