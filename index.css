@@ -35,7 +35,7 @@ body {
     height: 100vh;
     font-weight: 100;
     font-family: 'Lobster', cursive;
-    color: peachpuff;
+    color: rgb(211, 255, 201);
     background-image:url('https://64.media.tumblr.com/tumblr_maf7htRuY81rt479bo1_500.gifv');
     background-size:100%;
     background-repeat: repeat-y;
@@ -46,15 +46,10 @@ body {
 h1 {
     margin: 0px;
     font-size: 60px;
-    text-shadow: 4px 4px #6565c8;
     text-align: center;
     position: relative;
 }
-h2#timetext{ 
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 4px 8px #6565c8;
-}
+
 div.card.h2{
     display: flex;
     color: red;
@@ -64,7 +59,6 @@ div.card.h2{
 #texttime { 
     margin: 1px;
     font-size: 65px;
-    text-shadow: 4px 4px #6565c8;
     top: 400px;
     text-align: center;
 
@@ -73,27 +67,28 @@ div.card.h2{
     width: auto;
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 h3.card
 
 h5 {
     font-size: 18px;
+    color: white;
 }
 h3 {
     margin-left: 13px;
     font-size: 26px;
-    text-shadow: 4px 4px #6565c8;
+    color: white;
 }
 h4 {
     font-size: 25px;
-    text-shadow: 4px 4px #6565c8;
-    text-shadow: green;
+    color: white;
 }
 h6 {
     font-size: 25px;
-    text-shadow: 4px 4px #6565c8;
     margin: 1px;
+    color: white;
 }
 
 p{
@@ -102,10 +97,10 @@ p{
     left: 30px 
     top : px;
     font-size: 22px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    text-shadow: 2px 2px #6565c8;
+    font-family: 'Yanone Kaffeesatz';
     margin: 12px;
     padding: 2px;
+    color: white;
 }
 img{ 
     margin: 5px;
@@ -119,12 +114,12 @@ img{
 input#send {
     border-radius: 25px;
     padding: 10px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Yanone Kaffeesatz';
 }
 input#Generate {
     border-radius: 25px;
     padding: 10px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Yanone Kaffeesatz';
 }
 textarea#new-comment {
     width: 400px;
@@ -134,10 +129,11 @@ textarea#new-comment {
 	padding: 5px;
     margin:  10px;
     box-shadow: 6px 4px rgb(201, 164, 164);
-	font-family: Tahoma, sans-serif;
+	font-family: 'Yanone Kaffeesatz';
 	background-image: url(bg.gif);
 	background-position: bottom right;
 	background-repeat: no-repeat;
+
 }
 
 textarea#emailaddress {
@@ -145,26 +141,26 @@ textarea#emailaddress {
     border-radius: 10px;
 	padding: 5px;
     margin:  10px;
-	font-family: Tahoma, sans-serif;
 	background-image: url(bg.gif);
 	background-position: bottom right;
 	background-repeat: no-repeat;
+    font-family: 'Yanone Kaffeesatz';
 }
 textarea#message {
 
     border-radius: 10px;
 	padding: 5px;
     margin:  10px;
-	font-family: Tahoma, sans-serif;
 	background-image: url(bg.gif);
 	background-position: bottom right;
 	background-repeat: no-repeat;
+    font-family: 'Yanone Kaffeesatz';
 }
 input#Submit {
     border-radius: 25px;
     padding: 10px;
     margin-bottom: 40px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Yanone Kaffeesatz';
     display: wrap;
     align-items: center;
     justify-content: center;
@@ -176,14 +172,17 @@ form #new-comment {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    font-family: 'Yanone Kaffeesatz';
 }
 
 form.button{
     position: absolute;
     align-items: center;
+    font-family: 'Yanone Kaffeesatz';
 }
 label#new-comment {
     position:relative; left:85px; bottom:150px;
     font-size: 18px;
+    font-family: 'Yanone Kaffeesatz';
 
 }
