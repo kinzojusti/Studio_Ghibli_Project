@@ -7,7 +7,7 @@
     margin: 20px;
     border-radius: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
   /* On mouse-over, add a deeper shadow */
@@ -23,16 +23,11 @@
 
 
 
-
-
-#h2{
-    border: 2px solid peachpuff; 
-}
-
+/* 
 form#email.h2 {
     align-items: center;
 
-}
+} */
 
 body {
     border: 10px white;
@@ -66,17 +61,21 @@ div.card.h2{
     flex-direction: row;
     align-items: flex-end;
 }
-h2#texttime { 
-    margin: 22px;
+#texttime { 
+    margin: 1px;
     font-size: 65px;
     text-shadow: 4px 4px #6565c8;
     top: 400px;
     text-align: center;
 
 }
-div#movie-details{
+#movie-details{
     width: auto;
+    display: flex;
+    flex-direction: column;
 }
+
+h3.card
 
 h5 {
     font-size: 18px;
@@ -98,8 +97,10 @@ h6 {
 }
 
 p{
-    width: 200px;
-
+    width: 200px; 
+    position: relative;
+    left: 30px 
+    top : px;
     font-size: 22px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-shadow: 2px 2px #6565c8;
