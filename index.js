@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const newEmail = {
             emailaddress: e.target.emailaddress.value,
             message: e.target.message.value,
-         }
+            }
         console.log('email')
         }
 
