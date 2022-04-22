@@ -39,8 +39,18 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log(threeMovies)
         
     } 
+            // const parent = document.getElementById("container");
 
-
+            // for( { img, h2, h3, p, } of ads) {
+            // const wrapper =  document.createElement("div");
+            // wrapper.className = "container"; // you can add your class for it
+            // const headline = document.createElement("h1");
+            // headline.textContent = title;
+            // const descrip = document.createElement("p");
+            // descrip.textContent = description;    
+            // const dates = document.createElement("sub");
+            
+            
 
     //callbacks below://
         function render1stMovie(movie){
