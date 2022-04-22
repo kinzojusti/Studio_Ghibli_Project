@@ -76,8 +76,12 @@ h5 {
     font-size: 18px;
     color: white;
 }
+h2 {
+    position: 20px;
+    font-size: 30px;
+}
 h3 {
-    margin-left: 13px;
+    position: 13px;
     font-size: 26px;
     color: white;
 }
@@ -92,12 +96,10 @@ h6 {
 }
 
 p{
-    width: 200px; 
+    width: 650px; 
     position: relative;
-    left: 30px 
-    top : px;
-    font-size: 22px;
     font-family: 'Yanone Kaffeesatz';
+    font-size: x-large;
     margin: 12px;
     padding: 2px;
     color: white;
@@ -105,8 +107,8 @@ p{
 img{ 
     margin: 5px;
     border-radius: 25px ;
-    width: 600px;
-    height: 900px;
+    width: 375px;
+    height: 625px;
     resize: both;
 
 }
