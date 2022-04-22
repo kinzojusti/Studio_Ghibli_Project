@@ -49,13 +49,10 @@ h1 {
     text-align: center;
     position: relative;
 }
-
-div.card.h2{
-    display: flex;
-    color: red;
-    flex-direction: row;
-    align-items: flex-end;
+h2#title {
+    font-size: 100px;
 }
+
 #texttime { 
     margin: 1px;
     font-size: 65px;
@@ -63,32 +60,57 @@ div.card.h2{
     text-align: center;
 
 }
+/* #poster-display{
+    color: red;
+    height: 100;
+    display: flex;
+    flex-direction: row;
+} */
+#movie-details, h2, h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:baseline;
+}
+
 #movie-details{
     width: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     color: white;
 }
+#movie-details, h2{
+    font-size: 45px;
+    margin: 3px;
 
-h3.card
+}
+#movie-details, h3{
+    font-size: 30px;
+}
+form#new-comment, h4{
+    font-size: xx-large;
+    position: relative;
+    left: 15px;
+
+}
+form#new-comment, label{
+    font-size: x-large
+
+    
+
+}
+form#new-comment, #Submit{
+    font-size: x-large;
+    align-items: center;
+}
+
 
 h5 {
     font-size: 18px;
     color: white;
 }
-h2 {
-    position: 20px;
-    font-size: 30px;
-}
-h3 {
-    position: 13px;
-    font-size: 26px;
-    color: white;
-}
-h4 {
-    font-size: 25px;
-    color: white;
-}
+
 h6 {
     font-size: 25px;
     margin: 1px;
@@ -99,7 +121,7 @@ p{
     width: 650px; 
     position: relative;
     font-family: 'Yanone Kaffeesatz';
-    font-size: x-large;
+    font-size: 18px;
     margin: 12px;
     padding: 2px;
     color: white;
@@ -107,8 +129,8 @@ p{
 img{ 
     margin: 5px;
     border-radius: 25px ;
-    width: 375px;
-    height: 625px;
+    width: 400px;
+    height: 650px;
     resize: both;
 
 }
@@ -117,11 +139,18 @@ input#send {
     border-radius: 25px;
     padding: 10px;
     font-family: 'Yanone Kaffeesatz';
+    font-size: x-large;
+    position: relative;
+    bottom: 20px;
 }
 input#Generate {
     border-radius: 25px;
     padding: 10px;
     font-family: 'Yanone Kaffeesatz';
+    font-size: x-large;
+    position: relative;
+    left: 15px;
+    
 }
 textarea#new-comment {
     width: 400px;
@@ -170,21 +199,30 @@ input#Submit {
 form #new-comment {
     border: 6px white;
     align-items: stretch;
+    align-content: center;
     border: 2px white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-family: 'Yanone Kaffeesatz';
+    
+}
+
+form#email, label {
+    position: relative;
+    bottom: 12px;
 }
 
 form.button{
     position: absolute;
+    justify-content: center;
     align-items: center;
     font-family: 'Yanone Kaffeesatz';
+    font-size: xx-large;
 }
 label#new-comment {
     position:relative; left:85px; bottom:150px;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Yanone Kaffeesatz';
 
 }
